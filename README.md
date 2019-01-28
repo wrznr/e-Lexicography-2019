@@ -1,2 +1,2 @@
 # e-Lexicography-2019
-Course materials for the compact course in digital lexicography held at the University of Potsdam
+Course materials for the compact course in digital lexicography held at the University of Potsdam in February 2019
