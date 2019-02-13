@@ -351,7 +351,7 @@ count: false
 - Often implemented using **grammar rules**
     + No straightforward representation as sequence classification
     + Small number of atomics (word classes)
-- Neural networks are taking over
+- Neural networks are taking over!
 
 ---
 
@@ -363,6 +363,8 @@ count: false
     + [`spaCy`](https://explosion.ai/demos/displacy)
 - Important for lexicographic work
     + Usage of words
+- Used in combination with collocation extraction (see below)
+    + [DWDS word profile](https://www.dwds.de/wp?q=)
 
 ---
 
