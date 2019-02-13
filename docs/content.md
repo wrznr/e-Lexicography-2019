@@ -159,6 +159,24 @@ Cliff said, “I am pleased to support ACET. ...”
 
 ---
 
+# Tokenization
+
+- Sketching a machine-learning approach
+    + Define a sequence representation:
+        * E.g. running text as sequence of characters
+    + Define a classification scheme:
+        * E.g. each character can start a token (binary classification)
+    + Create some training data:
+	```
+	(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)
+	```
+    + Select a model family:
+        * Hidden Markov Model, Conditional Random Field, Neural Network ...
+    + Start training
+- Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
+
+---
+
 # Morphological analysis
 
 - Task description:
