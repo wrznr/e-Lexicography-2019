@@ -157,6 +157,12 @@ Cliff said, “I am pleased to support ACET. ...”
 
 ---
 
+class: title-slide
+
+# Morphological analysis
+
+---
+
 # Morphological analysis
 
 - Task description:
@@ -270,15 +276,31 @@ count: false
 
 ---
 
+class: title-slide
+
+# Pos tagging
+
+---
+
 # PoS tagging
 
 - Selection of the **most probable** word class in the sentential context from the set of **possible** word classes
 - Macine-learning approach, trained using **manually categorized** data, e.g.:
-    + Hidden Markov Model using trigrams of words and class sets
+    + Hidden Markov Model using trigrams of words (and class sets, cf. Jurish, 2003)
     + Computation of the most probable sequence of word classes using the Viterbi algorithm
     + (Heuristic selection of the simplest **morphological analysis** for the determined PoS)
     + Easily adaptable to specific text genres (historical language, child language etc.)
-- Most known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual, includes lemmatization facilities)
+- Best-known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual, includes lemmatization facilities)
+
+---
+
+# PoS tagging
+
+- Again, manual PoS tagging is easier than modelling the principles of word class distribution!
+    + Machine learning approach instead of rule system
+- Important for languages with word class ambiguity (e.g. English, German)
+- Subject of many scientific competitions
+- Maybe the most important annotation step for lexicographic work
 
 ---
 
@@ -293,6 +315,20 @@ count: false
 # PoS tagging
 
 .center[<img src="figures/kohl.svg" style="width:800px"/>]
+
+---
+
+class: title-slide
+
+# Dependency Parsing
+
+---
+
+# Dependency Parsing
+
+- Analysis of the **structural dependencies** between words within a sentence
+
+.center[<img src="figures/dependency_ex.svg" style="width:800px"/>]
 
 ---
 
