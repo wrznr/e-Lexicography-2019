@@ -164,7 +164,7 @@ Cliff said, “I am pleased to support ACET. ...”
 - Task description:
     + Assignment of **possible** word categories
         ```
-        greens ↦ {verb, noun}
+	(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)
         ```
 
 ---
