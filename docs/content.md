@@ -327,8 +327,42 @@ class: title-slide
 # Dependency Parsing
 
 - Analysis of the **structural dependencies** between words within a sentence
+- Not to be confused with constituency parsing:
+
+---
+
+count: false
+
+# Dependency Parsing
+
+- Analysis of the **structural dependencies** between words within a sentence
+- Not to be confused with constituency parsing:
 
 .center[<img src="figures/dependency_ex.svg" style="width:800px"/>]
+
+---
+
+# Dependency Parsing
+
+- All words in relation to the **root** of the sentence (usually the finite verb)
+
+.center[<img src="figures/dependency_ex2.png" style="width:800px"/>]
+
+- Often implemented using **grammar rules**
+    + No straightforward representation as sequence classification
+    + Small number of atomics (word classes)
+- Neural networks are taking over
+
+---
+
+# Dependency Parsing
+
+- Many available tools
+    + `Stanford Parser`
+    + `ParZu`
+    + [`spaCy`](https://explosion.ai/demos/displacy)
+- Important for lexicographic work
+    + Usage of words
 
 ---
 
