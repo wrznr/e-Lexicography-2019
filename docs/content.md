@@ -159,6 +159,10 @@ Cliff said, “I am pleased to support ACET. ...”
 
 ---
 
+# Morphological analysis
+
+---
+
 class: title-slide
 
 # Many thanks for your attention
