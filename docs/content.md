@@ -155,8 +155,6 @@ Cliff said, “I am pleased to support ACET. ...”
     + Select a model family:
         * Hidden Markov Model, Conditional Random Field, Neural Network ...
     + Start training
-- Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
-
 
 ---
 
@@ -279,4 +277,6 @@ count: false
 
 ---
 
-Many thanks for your attention
+class: title-slide
+
+# Many thanks for your attention
