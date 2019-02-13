@@ -194,6 +194,83 @@ Cliff said, “I am pleased to support ACET. ...”
 
 ---
 
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+.center[.img-orig[![Lexicon](figures/morph_ex.svg)]]
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+.center[.img-orig[![Lexicon](figures/morph_ex2.svg)]]
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex3.svg" width="650" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex4.svg" width="880" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex6.svg" width="880" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex5.svg" width="880" /></center>
+
+
+---
+
 class: title-slide
 
 # Many thanks for your attention
