@@ -114,7 +114,7 @@ class: title-slide
 
 Critical examples
 ```
-Cliff said, “I am pleased to support ACET in the world they are doing. ...”
+Cliff said, “I am pleased to support ACET. ...”
 ```
 
 ---
@@ -139,9 +139,9 @@ Cliff said, “I am pleased to support ACET in the world they are doing. ...”
 
 - Sketching a statistical approach
     + Define a sequence model:
-	* Running text as sequence of characters
+        * Running text as sequence of characters
     + Define a classification scheme:
-	* Each character can start a token (binary classification)
+        * Each character can start a token (binary classification)
     + Create some training data:
 	```
 	(A,1),(␣,1),(t,1),(e,0),(s,0),(t,0),(.,1)
