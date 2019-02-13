@@ -96,6 +96,12 @@ class: title-slide
 
 ---
 
+class: title-slide
+
+# Tokenization
+
+---
+
 # Tokenization
 
 - Segmentation of running text into **tokens** and **sentences**
@@ -150,6 +156,13 @@ Cliff said, “I am pleased to support ACET. ...”
         * Hidden Markov Model, Conditional Random Field, Neural Network ...
     + Start training
 - Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
+
+
+---
+
+class: title-slide
+
+# Morphological analysis
 
 ---
 
