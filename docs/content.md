@@ -92,7 +92,7 @@ class: title-slide
 - Can be done automatically (with reliable quality)
 - Two fundamental principles of modelling linguistic knowledge:
     + Based on **manually** designed rules (i.e. *rule-based* approaches)
-    + Based on **automatically** induced rules (i.e. *statistical* approaches)
+    + Based on **automatically** induced rules (i.e. *machine-learning* approaches)
 
 ---
 
@@ -137,12 +137,129 @@ Cliff said, “I am pleased to support ACET. ...”
 
 # Tokenization
 
-- Sketching a statistical approach
-    + Define a sequence model:
-        * Running text as sequence of characters
+- Sketching a machine-learning approach
+    + Define a sequence representation:
+        * E.g. running text as sequence of characters
     + Define a classification scheme:
-        * Each character can start a token (binary classification)
+        * E.g. each character can start a token (binary classification)
     + Create some training data:
 	```
 	(A,1),(␣,1),(t,1),(e,0),(s,0),(t,0),(.,1)
 	```
+    + Select a model family:
+        * Hidden Markov Model, Conditional Random Field, Neural Network ...
+    + Start training
+- Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
+
+---
+
+# Morphological analysis
+
+- Task description:
+    + Assignment of **possible** word categories
+      ```
+      greens ↦ {verb, noun}
+      Carpenter  ↦ {noun, proper name}
+      ```
+    + Assignment of a canonical **base form** (*stem* or *lemma*)
+      ```
+      greens ↦ green
+      Carpenter's  ↦ Carpenter
+      ```
+    + Identification of word formation processes
+      ```
+      basketball ↦ basket<NN>#ball<NN>
+      happily ↦ happy<ADJ>~ly<ADV>
+      ```
+
+---
+
+# Morphological analysis
+
+- Machine learning not suitable/successful
+    + Manual segmentation is difficult!
+- Challenging for languages with complex word formation (e.g. Finnish, German, Turkish)
+- `Finite State Morphology` (rule-based approach):
+    + Recipe:
+        * Take a **huge** list of simple (monomorphematic) words
+        * Encode their morphological features
+        * Add pre- and suffixes,
+    + Put everything into a finite-state automaton
+    + Apply its **Kleene closure**
+- Reduced to [**stemming**](https://text-processing.com/demo/stem/) (i.e. the removal of pre- and suffixes) for English
+
+---
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+.center[.img-orig[![Lexicon](figures/morph_ex.svg)]]
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+.center[.img-orig[![Lexicon](figures/morph_ex2.svg)]]
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex3.svg" width="650" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex4.svg" width="880" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex6.svg" width="880" /></center>
+
+---
+
+count: false
+
+# Morphological analysis
+
+- Illustration
+    + Lexicon `{schön<A>,Geist<N>}`
+    + Prefixes `{un<p>,ur<p>}`
+    + Suffixes `{heit<N>,lich<A>}`
+
+<center><img src="figures/morph_ex5.svg" width="880" /></center>
