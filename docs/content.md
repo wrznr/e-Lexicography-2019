@@ -149,9 +149,7 @@ Cliff said, “I am pleased to support ACET. ...”
     + Define a classification scheme:
         * E.g. each character can start a token (binary classification)
     + Create some training data:
-	```
-	(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)
-	```
+	`(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)`
     + Select a model family:
         * Hidden Markov Model, Conditional Random Field, Neural Network ...
     + Start training
