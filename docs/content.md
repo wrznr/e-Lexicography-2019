@@ -40,8 +40,8 @@ class: title-slide
         * German: Deutsches Textarchiv (Geyken and Klein, 2009)
 - *special* corpora
     + *representative* sample of a language with respect to
-        * medium: news paper, (movie) subtitles, internet blogs ...
-        * content: infant, youth speech ...
+        * medium: newspapers, (movie) subtitles, internet blogs, ...
+        * content: infant, youth speech, ...
         * research: Penn Treebank (Marcus et al., 1993), childLex (Schroeder et al., 2014)
 
 ---
@@ -129,7 +129,7 @@ Cliff said, “I am pleased to support ACET. ...”
 
 - **Challenges**:
     + Ambiguous characters (especially `FULL STOP`)
-    + Tokens containing white-space (e.g. URLs)
+    + Tokens containing white-space (e.g. URLs) <!-- white space is forbidden in URLs, better example: geonames like "New York" -->
     + Non-terminated sentences (e.g. headings)
     + Non-standard texts (e.g. chats, tweets)
 - Extremely complex rule-based systems
@@ -151,7 +151,7 @@ Cliff said, “I am pleased to support ACET. ...”
     + Create some training data:
         * `(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)`
     + Select a model family:
-        * Hidden Markov Model, Conditional Random Field, Neural Network ...
+        * Hidden Markov Model, Conditional Random Field, Neural Network, ...
     + Start training
 - Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
 
@@ -193,7 +193,7 @@ class: title-slide
     + Recipe:
         * Take a **huge** list of simple (monomorphematic) words
         * Encode their morphological features
-        * Add pre- and suffixes,
+        * Add pre- and suffixes, <!-- what's that comma for? -->
     + Put everything into a finite-state automaton
     + Apply its **Kleene closure**
 - Reduced to [**stemming**](https://text-processing.com/demo/stem/) (i.e. the removal of pre- and suffixes) for English
@@ -278,19 +278,20 @@ count: false
 
 class: title-slide
 
-# Pos tagging
+# PoS tagging
 
 ---
 
 # PoS tagging
 
 - Selection of the **most probable** word class in the sentential context from the set of **possible** word classes
-- Macine-learning approach, trained using **manually categorized** data, e.g.:
+- Machine-learning approach, trained using **manually categorized** data, e.g.:
     + Hidden Markov Model using trigrams of words (and class sets, cf. Jurish, 2003)
     + Computation of the most probable sequence of word classes using the Viterbi algorithm
     + (Heuristic selection of the simplest **morphological analysis** for the determined PoS)
     + Easily adaptable to specific text genres (historical language, child language etc.)
 - Best-known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual, includes lemmatization facilities)
+<!-- text goes beyond slide at bottom -->
 
 ---
 
@@ -399,6 +400,8 @@ class: title-slide
 $$
 MI(x,y)=\log(\frac{P(x,y)}{P(x)P(y)})
 $$
+
+<!-- the formula above is not processed by github's online presentation tool -->
 
 ---
 
