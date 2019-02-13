@@ -161,6 +161,23 @@ Cliff said, “I am pleased to support ACET. ...”
 
 # Morphological analysis
 
+- Task description:
+    + Assignment of **possible** word categories
+      ```
+      greens ↦ {verb, noun}
+      Carpenter  ↦ {noun, proper name}
+      ```
+    + Assignment of a canonical **base form** (*stem* or *lemma*)
+      ```
+      greens ↦ green
+      Carpenter's  ↦ Carpenter
+      ```
+    + Identification of word formation processes
+      ```
+      basketball ↦ basket<NN>#ball<NN>
+      happily ↦ happy<ADJ>~ly<ADV>
+      ```
+
 ---
 
 class: title-slide
