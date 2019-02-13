@@ -268,6 +268,31 @@ count: false
 
 <center><img src="figures/morph_ex5.svg" width="880" /></center>
 
+---
+
+# PoS tagging
+
+- Selection of the **most probable** word class in the sentential context from the set of **possible** word classes
+- Macine-learning approach, trained using **manually categorized** data, e.g.:
+    + Hidden Markov Model using trigrams of words and class sets
+    + Computation of the most probable sequence of word classes using the Viterbi algorithm
+    + (Heuristic selection of the simplest **morphological analysis** for the determined PoS)
+    + Easily adaptable to specific text genres (historical language, child language etc.)
+- Most known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual, includes lemmatization facilities)
+
+---
+
+# PoS tagging
+
+.center[<img src="figures/kohl1.svg" style="width:800px"/>]
+
+---
+
+count: false
+
+# PoS tagging
+
+.center[<img src="figures/kohl.svg" style="width:800px"/>]
 
 ---
 
