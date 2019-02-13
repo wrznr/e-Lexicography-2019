@@ -149,25 +149,7 @@ Cliff said, “I am pleased to support ACET. ...”
     + Define a classification scheme:
         * E.g. each character can start a token (binary classification)
     + Create some training data:
-	`(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)`
-    + Select a model family:
-        * Hidden Markov Model, Conditional Random Field, Neural Network ...
-    + Start training
-- Test at [www.dwds.de/waste](http://kaskade.dwds.de/waste/demo.perl)
-
----
-
-# Tokenization
-
-- Sketching a machine-learning approach
-    + Define a sequence representation:
-        * E.g. running text as sequence of characters
-    + Define a classification scheme:
-        * E.g. each character can start a token (binary classification)
-    + Create some training data:
-	```
-	(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)
-	```
+        * `(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)`
     + Select a model family:
         * Hidden Markov Model, Conditional Random Field, Neural Network ...
     + Start training
@@ -179,9 +161,36 @@ Cliff said, “I am pleased to support ACET. ...”
 
 - Task description:
     + Assignment of **possible** word categories
-        ```
-	(A,1),(_,1),(t,1),(e,0),(s,0),(t,0),(.,1)
-        ```
+      ```
+      greens ↦ {verb, noun}
+      Carpenter  ↦ {noun, proper name}
+      ```
+    + Assignment of a canonical **base form** (*stem* or *lemma*)
+      ```
+      greens ↦ green
+      Carpenter's  ↦ Carpenter
+      ```
+    + Identification of word formation processes
+      ```
+      basketball ↦ basket<NN>#ball<NN>
+      happily ↦ happy<ADJ>~ly<ADV>
+      ```
+
+---
+
+# Morphological analysis
+
+- Machine learning not suitable/successful
+    + Manual segmentation is difficult!
+- Challenging for languages with complex word formation (e.g. Finnish, German, Turkish)
+- `Finite State Morphology` (rule-based approach):
+    + Recipe:
+        * Take a **huge** list of simple (monomorphematic) words
+        * Encode their morphological features
+        * Add pre- and suffixes,
+    + Put everything into a finite-state automaton
+    + Apply its **Kleene closure**
+- Reduced to [**stemming**](https://text-processing.com/demo/stem/) (i.e. the removal of pre- and suffixes) for English
 
 ---
 
