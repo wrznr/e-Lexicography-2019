@@ -106,7 +106,16 @@ class: title-slide
     + Foreign alphabets
     + Normalization of hyphenation
 - *Rule-based*: White-space segmentation, **regular expressions** (e.g. Greffenstette, 1999)
-- *Statistical*: **supervised learning** (given manually tokenized texts, cf. Jurish and Würzner, 2011)
+- *Statistical*: **supervised learning** (given manually tokenized texts, cf. Jurish and Würzner, 2013)
+
+---
+
+# Tokenization
+
+Critical examples
+```
+Cliff said, “I am pleased to support ACET in the world they are doing. ...”
+```
 
 ---
 
@@ -116,3 +125,24 @@ class: title-slide
     + Ambiguous characters (especially `FULL STOP`)
     + Tokens containing white-space (e.g. URLs)
     + Non-terminated sentences (e.g. headings)
+    + Non-standard texts (e.g. chats, tweets)
+- Extremely complex rule-based systems
+    + Several hundreds of interacting rules
+    + Hard to maintain and adjust
+- Manual tokenization is easy!
+    + Training materials available
+    + Low-cost adaption to specific genres
+
+---
+
+# Tokenization
+
+- Sketching a statistical approach
+    + Define a sequence model:
+	* Running text as sequence of characters
+    + Define a classification scheme:
+	* Each character can start a token (binary classification)
+    + Create some training data:
+	```
+	(A,1),(␣,1),(t,1),(e,0),(s,0),(t,0),(.,1)
+	```
