@@ -370,4 +370,38 @@ count: false
 
 class: title-slide
 
+# Collocations
+
+---
+
+# Collocations
+
+- Expressions of **multiple words** which commonly co-occur
+- *Typical* contexts of words
+    + Standard feature in monolingual dictionaries since the 1940's 
+    + Important for natural-sounding language (Palmer, 1933)
+- Identification of *useful* corpus records for lexicography 
+- Different notions of **commonly**:
+    + Number of co-occurrences does not work very well
+    + High-frequent (function) words, co-occurring with many words
+    + Some normalization necessary
+
+---
+
+# Collocations
+
+- Common measures include:
+    + *Mutual Information* (MI, Church and Hanks, 1990)
+    + *Student's t-test* (Manning and Schütze, 1999)
+    + *Log Dice* (Rychlý, 2008)
+- All measures consider co-occurrence and **non**-co-occurrence, e.g. MI:
+
+$$
+MI(x,y)=\log(\frac{P(x,y)}{P(x)P(y)})
+$$
+
+---
+
+class: title-slide
+
 # Many thanks for your attention
