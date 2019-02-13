@@ -263,3 +263,7 @@ count: false
     + Suffixes `{heit<N>,lich<A>}`
 
 <center><img src="figures/morph_ex5.svg" width="880" /></center>
+
+---
+
+Many thanks for your attention
