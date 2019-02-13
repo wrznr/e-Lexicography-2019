@@ -346,7 +346,7 @@ count: false
 
 - All words in relation to the **root** of the sentence (usually the finite verb)
 
-.center[<img src="figures/dependency_ex2.png" style="width:800px"/>]
+.center[<img src="figures/dependency_ex2.png" style="width:400px"/>]
 
 - Often implemented using **grammar rules**
     + No straightforward representation as sequence classification
