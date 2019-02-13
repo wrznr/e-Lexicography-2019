@@ -84,3 +84,30 @@ class: title-slide
 # Linguistic annotation
 
 - A sample tool chain:
+    + Segmentation of running text into “words” and sentences: **Tokenization**
+    + Assignment of (morphological) base forms to (inflected) words: **Stemming**
+    + Assignment of (syntactic) categories to words: **PoS tagging**
+    + Determination of the dependencies between words in the sentential context: **Dependency parsing**
+    + Evaluation of co-occurrences of words and phrases: **Distributional semantics**
+- Can be done automatically (with reliable quality)
+- Two fundamental principles of modelling linguistic knowledge:
+    + Based on **manually** designed rules (i.e. *rule-based* approaches)
+    + Based on **automatically** induced rules (i.e. *statistical* approaches)
+
+---
+
+# Tokenization
+
+- Segmentation of running text into “words” (**tokens**) and **sentences**
+- (Pre-)classification of tokens to support subsequent processing steps
+    + Abbreviations
+    + Numbers
+    + Special characters
+    + Foreign alphabets
+- Normalization of hyphenation
+- *Rule-based*: White-space segmentation, **regular expressions** (e.g. Greffenstette, 1999)
+- *Statistical*: **supervised learning** (given manually tokenized texts, cf. Jurish and Würzner, 2011)
+- **Challenges**:
+    + Ambiguous characters (especially `FULL STOP`)
+    + Tokens containing white-space (e.g. URLs)
+    + Non-terminated sentences (e.g. headings)
