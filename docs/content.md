@@ -280,6 +280,19 @@ count: false
 
 ---
 
+# Morphological analysis
+
+- Statistical approaches exist!
+    + **supervised**:
+        * Sequence classification (e.g. Würzner and Jurish, 2015)
+    + **unsupervised**:
+        * Based on character distribution (e.g. Creutz and Lagus, 2007)
+- Results are not satisfying!
+- Subject to many scientific competitions
+    + Potential for new ideas
+
+---
+
 class: title-slide
 
 # PoS tagging
