@@ -294,13 +294,15 @@ class: title-slide
         * Computation of the most probable sequence of word classes using the Viterbi algorithm
     + (Heuristic selection of the simplest **morphological analysis** for the determined PoS)
     + Easily adaptable to specific text genres (historical language, child language etc.)
-- Best-known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual, includes lemmatization facilities)
+- Best-known tool [`TreeTagger`](https://copa-trad.ufsc.br/#tree-tagger-cloud) (multilingual)
 
 ---
 
 # PoS tagging
 
 .center[<img src="figures/tagging_with_moot.png" style="width:800px"/>]
+
+Test the [DWDS analysis tool chain](http://kaskade.dwds.de/demo/cab/)
 
 ---
 
