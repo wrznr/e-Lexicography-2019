@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei-lex-0.rng" type="application/xml"
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher></publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl></bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <!-- printed entry presented on slide 21 -->
+         <entry xml:id="e-1" xml:lang="en">
+            <form type="lemma">
+               <orth>aid</orth>
+               <pron notation="IPA">eɪd</pron>
+            </form>
+            <entry xml:id="e-2" xml:lang="en">
+               <gramGrp>
+                  <gram type="part-of-speech" norm="N">noun</gram>
+               </gramGrp>
+               <sense xml:id="s-1" n="1.">
+                  <def>help, especially money, food or other gifts given to people living in difficult conditions</def>
+                  <cit type="example">
+                     <quote>aid to the earthquake zone</quote>
+                  </cit>
+                  <cit type="example">
+                     <quote>an aid worker</quote>
+                  </cit>
+                  <gramGrp>
+                     <gram type="number">This meaning of aid has no plural.</gram>
+                  </gramGrp>
+                  <sense xml:id="s-2">                     
+                     <cit type="collocation">
+                        <quote>in aid of</quote>
+                        <def>in order to help</def>                        
+                     </cit>
+                     <cit type="example">
+                        <quote>We give money in aid of the Red Cross.</quote>
+                     </cit>
+                     <cit type="example">
+                        <quote>They are collecting money in aid of refugees.</quote>
+                     </cit>
+                  </sense>
+               </sense>               
+               <sense xml:id="s-3" n="2.">
+                  <def>something which helps you to do something</def>
+                  <cit type="example">
+                     <quote>kitchen aids</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="e-3" xml:lang="en">               
+               <gramGrp>
+                  <gram type="part-of-speech" norm="V">verb</gram>                  
+               </gramGrp>
+               <sense xml:id="s-4" n="1.">
+                  <def>to help something to happen</def>                  
+               </sense>
+               <sense xml:id="s-5" n="2.">
+                  <def>to help someone</def>
+               </sense>               
+            </entry>
+         </entry>
+      </body>
+  </text>
+</TEI>

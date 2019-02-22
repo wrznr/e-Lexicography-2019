@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei-lex-0.rng" type="application/xml"
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher></publisher>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl></bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <!-- printed entry presented as hardcopy -->
+         <entry xml:id="e-1" xml:lang="en">
+            <form type="lemma">
+               <orth>approach</orth>
+               <pron notation="IPA">əˈprəʊtʃ</pron>
+            </form>
+            <entry xml:id="e-2" xml:lang="en">
+               <gramGrp>
+                  <gram type="part-of-speech" norm="N">noun</gram>
+               </gramGrp>
+               <sense xml:id="s-1" n="1.">
+                  <def>the fact of coming nearer</def>
+                  <cit type="example">
+                     <quote>With the approach of winter we need to get the central heating checked.</quote>
+                  </cit>
+               </sense>
+               <sense xml:id="s-2" n="2.">
+                  <def>a way which leads to something</def>
+                  <cit type="example">
+                     <quote>The approaches to the city were crowded with coaches.</quote>
+                  </cit>
+               </sense>
+               <sense xml:id="s-3" n="3.">
+                  <def>a way of dealing with a situation</def>                  
+                  <cit type="example">
+                     <quote>His approach to the question was different from hers.</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="e-3" xml:lang="en">               
+               <gramGrp>
+                  <gram type="part-of-speech" norm="V">verb</gram>                  
+               </gramGrp>
+               <sense xml:id="s-4">
+                  <def>to come near</def>
+                  <cit type="example">
+                     <quote>The plane was approaching the airport when the lights went out.</quote>
+                  </cit>
+               </sense>               
+            </entry>
+         </entry>
+      </body>
+  </text>
+</TEI>
