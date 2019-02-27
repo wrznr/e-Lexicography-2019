@@ -1,0 +1,64 @@
+Term Project
+================
+
+Blockseminar e-lexicography
+Univ. of Potsdam WiSe 2019
+
+***
+
+
+Project ideas 
+=============
+(see below for the explanation of A,B,C)
+
+* General: A+B+C1 
+* more specific:
+* B+C ; replace A) by gutenberg.org/literature or by wikisource (idea make use of diachronic data; compare British Novels to AmE novels...)
+* A=German fake-news corpus; B); C1) fake-news dictionary or C2) selected key entries
+* software project: creation of a "word sketch" / wortprofil with spacy-tools/nltk...; include NE recognition --> provide word-sketch paper (AG)
+* more ideas...
+
+***
+<h1>Compontents of the term project</h1>
+
+A) Crawling 
+	* crawling an interesting and sufficiently large corpus
+	* candidates for corpora: cnn, NYT, fake news sites (postillon, allgemeine allgemeine)
+	* via sitemap from the website or index of commoncrawl.org (via cdx_toolkit, news-please)
+	* Metadata (+title, +date, ?"rubric", ?author) + url
+
+B) Corpus analysis
+	* analysing the data:
+  * e.g. python nltk,spacy: lemma, pos, colloc, concordances, dependancy parsing
+
+C1) Automatic creation of dictionary content
+	* create and populate a dictionary (tei-lex-0 format):
+	* form=lemma/orth; gramGrp, cit (colloc+ example sentences)
+  * if possible 10.000 entries (for 1 million tok corpus ~5000 is realistic)
+  * possible extension: extract definitory contexts (!doesn't work well for highly frequent and polysemous words)
+
+C2) Manual dictionary creation: write manual entries (~5)
+
+***
+Technicalities
+==============
+Important dates
+--------------
+
+	* write abstract: march 8th
+	* term paper:
+	* type A+B+C project: code + result (corpora, intermediate corpus results + xml-tei-0) + paper of 5-10 pages explaining method chosen
+  * for the software project: code + software documentation; some test data; report of 5-10 pages explaning the method; 
+	* submission: April 2nd
+
+Suggested outline of the report
+--------------
+* Title Page
+* Introduction: explain and motivate the goal(s) of the report 
+** description of resources and adopted method (+short code description in addition to the software documentation)
+** description of results
+** Discussion and conclusion
+
+
+
+
